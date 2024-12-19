@@ -13,9 +13,7 @@ function App() {
         {/* Render the ContactManager component */}
         <ContactManager />
       </main>
-      <footer>
-        <p>© {new Date().getFullYear()} Contact Manager. All rights reserved.</p>
-      </footer>
+
     </div>
   );
 }
