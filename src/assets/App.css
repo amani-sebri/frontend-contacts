@@ -1,0 +1,438 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.contact-manager {
+  margin: 20px;
+}
+
+.contact-manager h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.toggle-form-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.toggle-form-btn:hover {
+  background-color: #45a049;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.contact-form input {
+  width: 80%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.contact-table th,
+.contact-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.contact-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.contact-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.edit-btn, .delete-btn {
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #333;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+/* Modal Background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+}
+
+/* Form Layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Row Layout for Form Fields */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+/* Column Layout for Inputs */
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Layout for Labels on the Left */
+.label-left {
+  order: 1; /* Keeps the label on the left */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-column label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-column input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Buttons Styling */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.submit-btn,
+.close-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.close-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+/* Error Messages */
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.error-message p {
+  margin: 0;
+}
+
+/* Modal Background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Buttons Styling */
+.submit-btn,
+.close-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.close-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+/* Modal Background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Modal Header */
+.modal-content h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Fields */
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Submit and Close Buttons */
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn {
+  background-color: #4CAF50;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.close-btn {
+  background-color: #f44336;
+  margin-left: 10px;
+}
+
+.close-btn:hover {
+  background-color: #e53935;
+}
+
+/* Buttons Container */
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Error Message */
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Input Containers */
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Modal Close Button */
+.close-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+/* Modal Overlay (optional for responsiveness) */
+@media (max-width: 600px) {
+  .modal-content {
+      width: 90%;
+  }
+
+  .submit-btn, .close-btn {
+      width: 100%;
+  }
+}
+
+
+
